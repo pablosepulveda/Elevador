@@ -1,4 +1,4 @@
-var suboBajo = prompt ("subes o bajas");
+var suboBajo = prompt ("subo o bajo");
 var pisoSeleccionado = prompt ("a que piso vas?");
 var pisoActual = 1;
 const primerPiso = 2;
@@ -9,7 +9,7 @@ if (suboBajo == "subo"){
 	alert ("subo")
 	for(pisoActual; pisoActual <= ultimoPiso; pisoActual++){
 	console.log ("estas en el piso" + pisoActual);
-	 if (pisoActual === pisoSeleccionado){
+	 if (pisoActual == pisoSeleccionado){
 	 	alert ("llegastes")
 	 }
 	}
