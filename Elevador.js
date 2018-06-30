@@ -1,12 +1,12 @@
-var subirBajar = prompt ("subes o bajas");
-var pisoSeleccionado = prompt ("a que piso vas");
+var suboBajo = prompt ("subes o bajas");
+var pisoSeleccionado = prompt ("a que piso vas?");
 var pisoActual = 1;
 const primerPiso = 2;
 const ultimoPiso = 20;
 
 
-if (subirBajar == "subes"){
-	alert ("subes")
+if (suboBajo == "subo"){
+	alert ("subo")
 	for(pisoActual; pisoActual <= ultimoPiso; pisoActual++){
 	console.log ("estas en el piso" + pisoActual);
 	 if (pisoActual === pisoSeleccionado){
@@ -15,15 +15,15 @@ if (subirBajar == "subes"){
 	}
 }
 
-if (subirBajar == "bajas"){
-	alert ("bajas")
-}
 
+if (suboBajo === "bajo"){
+	alert ("bajo")
+pisoActual = 20;
 
-
-for(pisoActual; pisoActual <= ultimoPiso; pisoActual++){
+for(ultimoPiso; pisoActual >= 1; pisoActual--){
 	console.log ("estas en el piso" + pisoActual);
- if (pisoActual === pisoSeleccionado){
- 	alert ("llegastes")
+ if (pisoActual == pisoSeleccionado)
+ 	alert ("llegastes");
  }
 }
+
